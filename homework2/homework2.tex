@@ -1,0 +1,54 @@
+\documentclass[aps,floatfix,prd]{revtex4}
+%\documentclass[aps,floatfix,prd,showpacs,twocolumn]{revtex4}
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+
+
+
+\voffset 2.0cm
+
+\begin{document}
+
+
+
+\author{Hongbo Cai}
+
+
+\date{\today}
+\setlength{\baselineskip}{20pt}
+
+\maketitle
+
+\section{A}
+\noindent
+the prior:
+\\the probability I am in Pittsburgh is $P(in\;Pittsburgh)=0.9$, I am at my parents' home is $P(at\;parents'\;home)=0.08$, I am on vacation is $P(on\;vacation)=0.02$
+
+\section{B}
+\noindent
+$P(ocean)=P(ocean|in\;Pittsburgh)P(in\;Pittsburgh)+P(ocean|at\;parents'\;home)P(at\;parents'\;home)+P(ocean|on\;vacation)P(on\;vacation)=0.02\times0.1=0.002$
+\\
+the likelihood: 
+\\$P(ocean|in\;Pittsburgh)=0$, $P(ocean|at\;parents'\;home)=0$, $P(ocean|on\;vacation)=0.1$
+\\
+the posterior:
+\\ $P(in\;Pittsburgh|ocean)=\frac{P(ocean|in\;Pittsburgh)P(in\;Pittsburgh)}{P(ocean)}=0$
+\\
+$P(at\;parents'\;home|ocean)=\frac{P(ocean|at\;parents'\;home)P(at\;parents'\;home)}{P(ocean)}=0$
+\\
+$P(on\;vacation\;home|ocean)=\frac{P(ocean|on\;vacation)P(on\;vacation)}{P(ocean)}=1$
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
